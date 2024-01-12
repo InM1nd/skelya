@@ -1,0 +1,186 @@
+@import 'partials/header';
+@import 'partials/hero';
+@import 'partials/footer';
+@import './variables';
+
+/* 
+font-family: 'Caveat', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Unbounded', sans-serif; */
+
+
+:root {
+	--primary-text-color: #212121;
+	--additional-text-color: #ffffff;
+	--accent-color: #2196f3;
+	--text-color: #757575;
+	--background-color: #2f303a66;
+	--hover-color: #188ce8;
+	--background-team-color: #f5f4fa;
+	--background-filter-color: #f5f4fa;
+ }
+ 
+ p,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+	margin: 0;
+ }
+ 
+ .visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+ 
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+ }
+ 
+ ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+ }
+ 
+ body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #040000;
+	color: #000;
+	margin: 0;
+ }
+ 
+ a {
+	text-decoration: none;
+ }
+ 
+ img {
+	height: auto;
+	display: block;
+	max-width: 100%;
+ }
+ 
+ .container {
+	width: 1440px;
+	padding-left: 55px;
+	padding-right: 55px;
+	margin: 0 auto;
+ }
+ 
+ .section {
+	padding: 94px 0;
+	
+	
+ }
+
+
+/* HEADER */
+
+header {
+	/* position: absolute; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    overflow: hidden;
+	 color: #ffffff;
+	 height: 10vh;
+	padding-top: 32px;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+ }
+
+.menu_list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.menu_element{
+	font-size: 33.333px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 120%; /* 40px */
+	text-transform: uppercase;
+}
+
+
+
+
+/*  HERO  */
+
+.hero {
+	
+	max-width: 1600px;
+	margin: 0 auto;
+	height: auto;
+	position: relative;
+ }
+ 
+.hero-container {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	height: 90vh;
+	background-image: url("../img/HeroPic.png");
+	background-repeat: no-repeat;
+	background-position: center;
+
+	
+ }
+
+.background{
+
+}
+
+.hero-title_wrapper{
+	width: fit-content;
+	
+}
+
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	color: var(--additional-text-color);
+	text-transform: uppercase;
+	text-align: left;
+	font-family: 'Unbounded', sans-serif;
+	
+ }
+
+.title_underline{
+	float: right;
+	margin-bottom: 45px;
+}
+
+.bottom-wrapper{
+	margin-top: 450px;
+	margin-bottom: 20px;
+	/* position: absolute; */
+	/* bottom: 0; */
+}
+
+/* CASES */
+
+.cases{
+background-color: #fff;
+max-width: 1600px;
+margin: 0 auto;
+height: 100vh;
+}
+
+.cases_container{
+ 
+}
+
