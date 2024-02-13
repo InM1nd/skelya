@@ -13,17 +13,17 @@
 	 referrerpolicy="no-referrer"
  	/>
 
-	 <link rel="preconnect" href="https://fonts.googleapis.com">
-	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	 <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@500;600&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@500;600&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
 
-   
-	 <link rel="stylesheet" href="./scss/main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+	<link rel="stylesheet" href="./scss/main.css">
 
   </head>
   <body>
 	
-	<header class="header">
+	<header id="dynamicHeader">
 		<div class="header_container container">
 			<nav class="nav">
 				<ul class="menu_list">
@@ -37,41 +37,241 @@
 		</div>
 	</header>
 
-	<section class="hero">
+	
+	<section class="hero" id="hero">
 		<div class="hero-container container">
-			<div class="bottom-wrapper">
-				<div class="hero-title_wrapper">
-					<h1 class="hero-title">кар'єрний <br/> сервic у текстi </h1>
-					<img class="title_underline" src="./img/underText.png" alt="">
-				</div>
-				
-				<img class="img-wrapper" src="./img/skelya_logo_1440p.png" alt="Описание картинки">
+			<img class="hero_skelya-pic" src="./img/HeroPic.png" alt="Описание картинки">
+			<div class="hero_bottom-wrapper">
+				<img class="hero_logo-wrapper" src="./img/skelya_logo_1440p.png" alt="Описание картинки">
 			</div>
 		</div>
   </section>
 
-  <section class="cases">
-	<div class="cases_container container">
-	<div>
-		<ul>
-			<li>Світч</li>
-			<li>Кейс-чек</li>
-			<li>Ревью</li>
-		</ul>
-	</div>
-	<div>
-		<div>
-			<h3>Що</h3>
-			<p></p>
+	<section class="services" id="services">
+		<div class="services_container container">
+			<div class="services_content-wrapper">
+				<div class="services_card">
+					<div class="services_card-top" style="background-color: #CCC8FF;">
+						<h3 class="services_card-title">розбір кейсу</h3>
+					</div>
+					<div class="services_card-bottom">
+						<div class="services_card-info" style="padding-bottom: 30px;">
+							<p class="services_card-subtitle">cкільки</p>
+							<p class="services_card-text">1200 грн</p>
+						</div>
+						<div class="services_card-info">
+							<p class="services_card-subtitle">як довго</p>
+							<p class="services_card-text">1 тиждень</p>
+						</div>
+						<button class="services_card-button">вибрати</button>
+					</div>
+				</div>
+				<div class="services_card">
+					<div class="services_card-top" style="background-color: #FACAF7;">
+						<h3 class="services_card-title">супровід</h3>
+					</div>
+					<div class="services_card-bottom">
+						<div class="services_card-info" style="padding-bottom: 30px;">
+							<p class="services_card-subtitle">cкільки</p>
+							<p class="services_card-text">4000 грн / місяць</p>
+						</div>
+						<div class="services_card-info">
+							<p class="services_card-subtitle">як довго</p>
+							<p class="services_card-text">що місяця</p>
+						</div>
+						<button type="button" class="services_card-button">вибрати</button>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div>
-			<h3>Кому</h3>
-			<p></p>
+	</section>
+
+	<section class="format" id="spheres">
+		<div class="format_container container">
+			<img class="format_img" src="./img/spheres.png">
 		</div>
-	</div>
-	</div>
-  </section>
+	</section>
 
+	<section class="work" id="work">
+		<div class="work_container container">
+			<div class="work_wrapper">
+			<div class="work_content">
+				<div class="work_content-1">
+					<p class="work_content-number" style="padding-right:170px;"> <img class="circle"  src="./img/circle.png">01</p>
+					<p class="work_content-text">Заповнюєш форму </br> після сплати</p>
+					<img style="padding-left:50px; padding-top: 80px;" src="./img/arrow-1.png">
+				</div>
+				<div class="work_content-2">
+					<p class="work_content-text">Отримуєш підтвердження </br> на пошту і форму для заповнення</p>
+					<p class="work_content-number"style="padding-left:50px;">02</p>
+				</div>
+				<div class="work_content-3">
+					<p class="work_content-number" style="padding-right:58px;">03</p>
+					<p class="work_content-text">З тобою зв'язується наш </br> консультант у месенджер</p>
+					<img style="padding-left:50px; padding-bottom: 50px;" src="./img/arrow-2.png">
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
 
+	<section class="format" id="format">
+		<div class="format_container container">
+			<img class="format_img" src="./img/format.png">
+		</div>
+	</section>
+
+	<section class="about" id="faq">
+		<div class="about_container container">
+				
+				<div class="chat-container" id="chat-container">
+					<!-- Начальные вопросы и ответы -->
+				<div class="answers">
+						<div class="answer_base">Привіт</div>
+				</div>
+				<div class="answers">
+					<div class="answer_base">Скеля — сервіс кар'єрного розвитку, який штовхає тебе на дію.</div>
+				</div>
+				<div class="questions">
+					<div class="question">Розкажи більше! Чим ви займаєтесь?</div>
+				</div>
+				<div class="answers">
+					<div class="answer_base">Не любимо непрактичні поради та компроміси. Допомагаємо знаходити професійне визнання та зростати далі. 
+										Прагнемо до світу, де кожен отримує задоволення від роботи, бо це — шлях до суспільства, 
+										яке процвітає та рухається вперед.
+					</div>
+				</div>
+
+					<div class="questions">
+							<div class="question" onclick="toggleAnswer('answer1')">Куди звертатися, якщо виникають проблеми чи питання?</div>
+					</div>
+					<div class="answers">
+							<div class="answer" id="answer1">
+								Якщо у вас виникають проблеми чи питання, звертайтеся до служб підтримки компаній, локальних органів влади або спеціалізованих організацій. 
+								Також можете скористатися інтернет-ресурсами, форумами або гарячими лініями для отримання допомоги.</div>
+					</div>
+			
+					<div class="questions">
+							<div class="question" onclick="toggleAnswer('answer2')">Чи можна призупинити програму?</div>
+					</div>
+					<div class="answers">
+							<div class="answer" id="answer2">Відповідь</div>
+					</div>
+					<div class="questions">
+						<div class="question" onclick="toggleAnswer('answer3')">Які матеріали потрібно підготувати перед початком послуги?</div>
+					</div>
+					<div class="answers">
+							<div class="answer" id="answer3">Відповідь</div>
+					</div>
+			
+			
+					
+
+					<div class="faq-container">
+						<div class="questions">
+							<div class="question" onclick="toggleAnswer('answer4')">Чи є гарантія того, що я знайду роботу?</div>
+						</div>
+						<div class="answers">
+								<div class="answer" id="answer4">Відповідь</div>
+						</div>
+						
+						<div class="questions">
+							<div class="question" onclick="toggleAnswer('answer5')">Чи можливо продовжити підтримку після завершення програми?</div>
+						</div>
+						<div class="answers">
+								<div class="answer" id="answer5">Відповідь</div>
+						</div>
+					</div>
+
+					<div class="toggle-button-wrapper">
+						<button class="toggle-button" type="button" onclick="toggleQuestions()">бiльше питань</button>
+					</div>
+
+				</div>
+
+	</section>
+
+	<section class="reviews" id="reviews" >
+		<div class="reviews_container container" style="padding-right: 0px;">
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">	
+						<img src="./img/Max.png">
+				</div>
+				<div class="swiper-slide">	
+						<img src="./img/Olga.png">
+				</div>
+				<div class="swiper-slide">	
+					<img src="./img/Ivan.png">
+			</div>
+			</div>	
+			<div style="padding-top: 100px;">
+				<div class="swiper-scrollbar"></div>
+			</div>
+			<div class="swiper-button swiper-button-next"></div>
+    	<div class="swiper-button swiper-button-prev"></div>
+
+		</div>
+			
+	</div>
+	</section>
+
+	<section class="talk" id="talk">
+		<div class="talk_container container">
+			<div class="talk_wrapper">
+				<h3 class="talk_title">Залиш пошту — отримай</br>кар’эрний трекер!</h3>
+				<form class="talk_form">
+					<input class="talk_input" type="email" placeholder="E-mail">
+					<input class="talk_button" type="submit" value="Отримати!">
+				</form>
+				<p class="talk_description">Натискаючи на кнопку «Отримати!», ти погоджуєшься на обробку персональних даних.</p>
+			</div>
+		
+	</section>
+
+	<footer class="footer">
+		<div class="footer_container container">
+	
+			<div class="footer_content-wrapper">
+				<p class="footer_label">2024, Skelya </p>	
+				<div class="footer_content">
+					<ul class="footer_list">
+						<li class="footer_item">Угода Користувача</li>
+						<li class="footer_item">Політика конфіденційності</li>
+					</ul>
+				</div>
+				<div class="footer_content">
+					<ul class="footer_list">
+						<li class="footer_item"><a>telegram</a></li>
+						<li class="footer_item"><a>instagram</a></li>
+						<li class="footer_item"><a type="email">hi@skelya.careers</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer_logo-wrapper">
+				<img class="footer_logo" src="./img/skelya_logo_black_1440p.png" alt="Описание картинки">
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/header.js"></script>
+	<script src="./js/cases.js"></script>
+	<script src="./js/about.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 2.2,
+			spaceBetween: 30,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+			navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
   </body>
 </html>
