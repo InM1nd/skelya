@@ -98,7 +98,6 @@ font-family: 'Unbounded', sans-serif; */
 
 	padding: 0 20px;
 	margin: 0 auto;
-
  }
 
 .section_title-wrapper{
@@ -133,8 +132,6 @@ header {
 		height: 100px;
 		background-color: #000;
 	 color: #ffffff;
-
-	 padding-bottom: 20px;
 }
 
 .header_container {
@@ -180,7 +177,7 @@ header {
 
 .hero_skelya-pic{
 	width: 100%;
-	padding-bottom: 15px;
+	padding: 20px 0;
 }
 
 .hero_bottom-wrapper{
@@ -198,7 +195,7 @@ header {
 }
 
 .services_container{
-	padding: 80px 20px;
+	padding: 60px 20px;
 
 	height: 100%;
 	
@@ -272,7 +269,7 @@ header {
 }
 
 .expertise_container {
-	padding: 80px 20px;
+	padding: 60px 20px;
 
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -282,13 +279,61 @@ header {
 }
 
 .expertise_item {
+	position: relative;
+	overflow: hidden;
+  border-radius: 5px;
+
 }
 
-.expertise_img{
-	height: 100%;
-	width: 100%;
-	
+/* Стиль по умолчанию для первого элемента (белого) */
+.fill-white {
+  fill: white; /* белый цвет по умолчанию */
+  /* animation: fillAnimationWhite 1s infinite alternate; */
 }
+
+/* Стиль по умолчанию для второго элемента (прозрачного) */
+.fill-transparent {
+  fill: transparent; /* прозрачный цвет по умолчанию */
+  
+}
+
+.expertise_img .fill {
+  fill: transparent; /* прозрачный цвет по умолчанию */
+}
+
+/* CSS-анимация для прозрачного элемента */
+@keyframes fillAnimationTransparent {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: var(--hover-color); /* ваш пользовательский цвет (определенный в var(--hover-color)) */
+  }
+}
+
+/* CSS-анимация для белого элемента */
+@keyframes fillAnimationWhite {
+  from {
+    fill: white; /* белый цвет по умолчанию */
+  }
+  to {
+    fill: var(--hover-color); /* ваш пользовательский цвет (определенный в var(--hover-color)) */
+  }
+}
+
+.expertise_img:hover .fill-transparent {
+  animation: fillAnimationTransparent 0.7s ;
+	animation-fill-mode: both ;
+}
+
+.expertise_img:hover .fill-white {
+  animation: fillAnimationWhite 0.7s ;
+	animation-fill-mode: both;
+}
+
+
+
+
 
 /* FORMAT */
 
@@ -302,7 +347,7 @@ header {
 
 	/* height: 80%; */
 
-	padding: 80px 20px;
+	padding: 60px 20px;
 }
 
 .format_left {
@@ -325,6 +370,12 @@ header {
 
 	border: 2px solid #fff;
 	padding: 25px;
+
+	transition: all 0.3s ease-in-out;
+}
+
+.format_left-item:hover{
+	background-color: #6D61FF;
 }
 
 .format_left-item-text {
@@ -362,7 +413,7 @@ header {
 }
 
 .forwhom_contaier {
-	padding: 80px 20px;
+	padding: 60px 20px;
 }
 
 .forwhom_img-wrapper {
@@ -384,7 +435,6 @@ header {
 
 .footer{
 	background-color: #CCC9FF;
-	padding-bottom: 100px;
 }
 
 .footer_container{
