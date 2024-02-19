@@ -124,7 +124,7 @@ font-family: 'Unbounded', sans-serif; */
 /* HEADER */
 
 header {
-	position: fixed;
+	position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -133,6 +133,8 @@ header {
 		height: 100px;
 		background-color: #000;
 	 color: #ffffff;
+
+	 padding-bottom: 20px;
 }
 
 .header_container {
@@ -169,7 +171,7 @@ header {
  
 .hero_container {
 	display: flex;
-	justify-content:space-between;
+	justify-content:flex-end;
 	flex-direction: column;
 	height: 100%;
 	padding-top: 20px;
@@ -178,11 +180,11 @@ header {
 
 .hero_skelya-pic{
 	width: 100%;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 
 .hero_bottom-wrapper{
-
+	padding-bottom: 20px;
 }
 
 .hero_logo-wrapper{
@@ -196,7 +198,7 @@ header {
 }
 
 .services_container{
-	padding: 80px 0;
+	padding: 80px 20px;
 
 	height: 100%;
 	
@@ -241,7 +243,6 @@ header {
 
 .services_card-button {
 	width: 100%;
-	padding: 22px 60px;
 	border: 2px #fff solid;
 
 	font-family: Unbounded;
@@ -253,6 +254,17 @@ header {
 	color: #fff;
 }
 
+.button_1{
+	width: 60%;
+	padding: 22px 60px;
+	border-right: 0;
+}
+
+.button_2{
+	width: 40%;
+	padding: 22px 35px;
+}
+
 /* EXPERTISE */
 
 .expertise{
@@ -260,11 +272,12 @@ header {
 }
 
 .expertise_container {
+	padding: 80px 20px;
+
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 50px;
+	gap: 40px;
 
-	padding: 80px 0;
 	justify-content: center;
 }
 
@@ -289,7 +302,7 @@ header {
 
 	/* height: 80%; */
 
-	padding: 80px 0;
+	padding: 80px 20px;
 }
 
 .format_left {
@@ -349,7 +362,7 @@ header {
 }
 
 .forwhom_contaier {
-	padding: 80px 0;
+	padding: 80px 20px;
 }
 
 .forwhom_img-wrapper {
