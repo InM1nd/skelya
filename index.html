@@ -64,7 +64,7 @@
 					<img class="services_card-img" src="./img/Case.png">
 				</div>
 				<div class="services_card-bottom">
-					<button class="services_card-button button_1">детальніше</button>
+					<button class="services_card-button button_1 js-modal" data-modal="modal-1" type="button">детальніше</button>
 					<button class="services_card-button button_2">обрати</button>
 				</div>
 			</div>
@@ -76,7 +76,7 @@
 					<img class="services_card-img" src="./img/Accompany.png">
 				</div>
 				<div class="services_card-bottom">
-					<button class="services_card-button button_1">детальніше</button>
+					<button class="services_card-button button_1 js-modal" data-modal="modal-2" type="button">детальніше</button>
 					<button class="services_card-button button_2">обрати</button>
 				</div>
 			</div>
@@ -86,16 +86,41 @@
 
 <!-- SERVICE ON CLICK -->
 
-
-	<div id="myModal" class="modal">
-		<div class="modal-content">
-			<span class="close">&times;</span>
-			<h2 class="service-name"></h2>
-			<img class="service-image" src="">
-			<p class="service-price"></p>
-			<p class="service-description"></p>
+<div id="modal-1" class="modal">
+	<div class="modal_container container">
+		<div class="modal-window__title">
+			<h3>розбір кейсу</h3>
+			<a href="#" class="modal-close">Закрыть</a>
 		</div>
+		<div class="modal_content">
+			<div>
+				<p>Проаналізуємо проблему або ціль та запропонуємо рішення. На один кейс до пяти робочих днів.</p>
+				<p>типові запити</p>
+				<ul>
+					<li>Аналіз ринку праці в обраній сфері.</li>
+					<li>Оцінка навичок і кар'єрна стратегія.</li>
+					<li>Перегляд та оптимізація резюме.</li>
+					<li>Підготовка до співбесіди.</li>
+					<li>щось своє</li>
+				</ul>
+			</div>
+			<div>
+				<img>
+			</div>
+		</div>
+		<button class="modal_button" type="button">придбати</button>
 	</div>
+</div>
+
+
+<!-- <div id="modal_2" class="modal">
+	<div class="modal-window__title">
+		<h3>Как дела?</h3>
+		<a href="#" class="modal-close">Закрыть</a>
+	</div>
+</div> -->
+
+
 
 
 <!-- EXPERTISE -->

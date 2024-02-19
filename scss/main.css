@@ -139,7 +139,7 @@ header {
  }
 
 .nav{
-	padding: 35px 23px;
+	
 }
 
 .menu_list{
@@ -149,12 +149,21 @@ header {
 }
 
 .menu_element{
+	width: 100%;
+	text-align: center;
 	font-family: Unbounded;
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 120%; /* 40px */
 	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+	padding: 35px 23px;
+}
+
+.menu_element:hover{
+	cursor: pointer;
+	background-color: #6D61FF;
 }
 
 
@@ -249,6 +258,11 @@ header {
 	text-transform: uppercase;
 	text-align: center;
 	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.services_card-button:hover{
+	background-color: #6D61FF;
 }
 
 .button_1{
@@ -261,6 +275,44 @@ header {
 	width: 40%;
 	padding: 22px 35px;
 }
+
+
+/* MODAL */
+
+.modal{
+	position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+	width: 100%;
+  box-shadow: 0 10px 30px rgba(#000, .2);
+  background-color: #000;
+  border-radius: 4px;
+  transition: all .18s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+	color: #fff;
+}
+
+.modal.show{
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal__title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	height: 100%;
+	min-height: inherit;
+}
+
+
+
+
+
 
 /* EXPERTISE */
 
