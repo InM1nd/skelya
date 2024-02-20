@@ -115,7 +115,7 @@ font-family: 'Unbounded', sans-serif; */
  
 
 .wrapper{
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 
@@ -203,7 +203,7 @@ header {
 }
 
 .services_container{
-	padding: 60px 20px;
+	padding: 20px 20px;
 
 	height: 100%;
 	
@@ -576,7 +576,7 @@ header {
     fill: transparent;
   }
   to {
-    fill: #6D61FF; /* ваш пользовательский цвет (определенный в var(--hover-color)) */
+    fill: var(--hover-color); /* ваш пользовательский цвет (определенный в var(--hover-color)) */
   }
 }
 
