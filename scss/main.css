@@ -586,7 +586,9 @@ header {
 }
 
 @media (max-width: 500px) {
-	
+	.expertise_container {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 
