@@ -107,7 +107,7 @@ font-family: 'Unbounded', sans-serif; */
 .section_title{
 	font-family: Unbounded;
 	font-weight: 900;
-	font-size: clamp(2.25rem, 2.159rem + 0.3883vw, 2.625rem);
+	font-size: clamp(2.25rem, 1.5825rem + 2.8479vw, 5rem);
 	line-height: 120%;
 	text-transform: uppercase;
 	color: #000;
