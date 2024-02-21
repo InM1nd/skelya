@@ -295,6 +295,23 @@ header {
 	max-height: 550px;
 }
 
+@keyframes fillAnimationTransparent {
+  from {
+    fill: transparent;
+		stroke: white;
+  }
+  to {
+    fill: var(--hover-color);
+		stroke: var(--hover-color);
+  }
+}
+
+.services_card-img:hover .services_fill-transparent {
+  animation: fillAnimationTransparent 0.7s ;
+	animation-fill-mode: both ;
+	stroke: var(--hover-color);
+}
+
 .services_card-bottom {
 	display: flex;
 }
@@ -333,6 +350,17 @@ header {
 	.services_container{
 		gap: 20px;
 		padding: 20px;
+	}
+
+	.button_1{
+		width: 60%;
+		padding: 22px 40px;
+		border-right: 0;
+	}
+	
+	.button_2{
+		width: 40%;
+		padding: 22px 25px;
 	}
 }
 
@@ -545,36 +573,41 @@ header {
 /* Стиль по умолчанию для второго элемента (прозрачного) */
 .fill-transparent {
   fill: transparent; /* прозрачный цвет по умолчанию */
-  
+
 }
 
 .expertise_img .fill {
-  fill: transparent; /* прозрачный цвет по умолчанию */
+  fill: transparent;
+
+	 /* прозрачный цвет по умолчанию */
 }
 
 /* CSS-анимация для прозрачного элемента */
 @keyframes fillAnimationTransparent {
   from {
     fill: transparent;
+		stroke: white;
   }
   to {
-    fill: var(--hover-color); /* ваш пользовательский цвет (определенный в var(--hover-color)) */
+    fill: var(--hover-color);
+		stroke: var(--hover-color);
   }
 }
 
 /* CSS-анимация для белого элемента */
 @keyframes fillAnimationWhite {
   from {
-    fill: white; /* белый цвет по умолчанию */
+    fill: white;
   }
   to {
-    fill: var(--hover-color); /* ваш пользовательский цвет (определенный в var(--hover-color)) */
+    fill: var(--hover-color);
   }
 }
 
 .expertise_img:hover .fill-transparent {
   animation: fillAnimationTransparent 0.7s ;
 	animation-fill-mode: both ;
+	stroke: var(--hover-color);
 }
 
 .expertise_img:hover .fill-white {
@@ -733,15 +766,18 @@ header {
 @keyframes fillAnimationTransparent {
   from {
     fill: transparent;
+		stroke: white;
   }
   to {
-    fill: var(--hover-color); /* ваш пользовательский цвет (определенный в var(--hover-color)) */
+    fill: var(--hover-color);
+		stroke: var(--hover-color); /* ваш пользовательский цвет (определенный в var(--hover-color)) */
   }
 }
 
 .forwhom_img:hover .fill-transparent {
   animation: fillAnimationTransparent 0.7s ;
 	animation-fill-mode: both ;
+	stroke: var(--hover-color);
 }
 
 @media (max-width: 1300px) {
@@ -787,7 +823,7 @@ header {
 }
 
 .footer_content{
-	padding-left: 20%;
+	padding-left: 15%;
 }
 
 .footer_title{
@@ -843,10 +879,6 @@ header {
 }
 
 @media (max-width: 900px) {
-	
-}
-
-@media (max-width: 500px) {
 	.footer_content-wrapper{
 		flex-direction: column;
 		
@@ -864,4 +896,8 @@ header {
 		justify-content: flex-start;
 		margin-bottom: 20px;
 	}
+}
+
+@media (max-width: 500px) {
+	
 }
