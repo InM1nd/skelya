@@ -247,30 +247,33 @@ header {
 }
 
 .services_container{
-	padding-top: 60px;
-	padding-bottom: 60px;
+
+	padding: 0;
 
 	height: 100%;
 	
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 50px;
+	/* gap: 50px; */
 	
 }
 
 .services_card {
+	padding: 60px 20px;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
-
+	transition: all 0.7s ease-in-out;
 	width: 100%;
 }
+
+
+
 .services_card-price {
 	font-family: Unbounded;
 	font-weight: 400;
 	font-size: clamp(1.25rem, 0.9859rem + 0.8451vw, 2rem);
 	line-height: 130%;
-	color: #fff;
 
 	margin-bottom: 10px;
 }
@@ -280,7 +283,7 @@ header {
 	font-weight: 700;
 	font-size: clamp(2rem, 1.5752rem + 1.8123vw, 3.75rem);
 	text-transform: uppercase;
-	color: #fff;
+
 	margin-bottom: 25px;
 }
 
@@ -291,26 +294,40 @@ header {
 .services_card-img {
 	width: 100%;
 	height: 100%;
-
+	fill: var(--hover-color);
+	
 	max-height: 550px;
+	transition: all 0.3s ease-in-out;
 }
 
-@keyframes fillAnimationTransparent {
-  from {
-    fill: transparent;
-		stroke: white;
-  }
-  to {
-    fill: var(--hover-color);
-		stroke: var(--hover-color);
-  }
+.services_fill-transparent{
+	transition: all 0.3s ease-in-out;
+	stroke: #040000;
 }
 
-.services_card-img:hover .services_fill-transparent {
-  animation: fillAnimationTransparent 0.7s ;
-	animation-fill-mode: both ;
-	stroke: var(--hover-color);
+.services_card:hover {
+	transition: all 0.3s ease-in-out;
+	background-color: var(--hover-color);
+	color: #040000;
 }
+
+.services_card:hover .services_card-button{
+	border-color: #040000;
+	color: #040000;
+}
+
+
+.services_card:hover .services_card-img {
+	fill: #040000;
+	transition: stroke 0.3s ease-out;
+}
+
+.services_card:hover .services_fill-transparent {
+	stroke: #040000;
+	transition: stroke 0.3s ease-out;
+}
+
+
 
 .services_card-bottom {
 	display: flex;
