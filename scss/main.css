@@ -279,7 +279,7 @@ header {
 /* SERVICES */
 
 .services {
-
+	
 }
 
 .services_container{
@@ -455,6 +455,7 @@ header {
 /* MODAL */
 
 .modal{
+	overflow-y: auto;
 	position: fixed;
   z-index: 100;
   top: 0;
@@ -485,8 +486,8 @@ header {
 .modal_title{
 	font-family: Unbounded;
 	font-weight: 700;
-	font-size: clamp(2rem, 1.6394rem + 1.7588vw, 3.75rem);
-	line-height: 100%;
+	font-size: clamp(1.75rem, 1.3379rem + 2.0101vw, 3.75rem);
+	line-height: 130%;
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -592,6 +593,11 @@ header {
 }
 
 @media (max-width: 500px) {
+	.modal{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
 	.modal_content{
 		flex-direction: column-reverse;
 		justify-content: space-evenly;
@@ -599,7 +605,13 @@ header {
 
 	.modal_content-right{
 		padding: 0;
+		margin-top: 30px;
 	}
+
+	.modal_button{
+		margin-top: 90px;
+	}
+
 }
 
 
