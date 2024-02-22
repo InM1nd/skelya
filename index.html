@@ -34,8 +34,12 @@
 				<img class="hero_logo-wrapper" src="./img/skelya_logo_1440p.png" alt="Описание картинки">
 			</div>
 
+			<div>
+				<img class="hero_mobile-pic" src="./img/hero_mob.png">
+			</div>	
+
 <!-- HEADER	 -->
-			
+		
 			<header id="dynamicHeader">
 				<div class="header_container">
 					<nav class="nav">
@@ -205,11 +209,81 @@
 				</svg>
 			</div>
 		</div>
+
+		<div class="expertise_mobile">
+			<div class="swiper mySwiper2">
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide">
+						<div class="expertise_swiper-content" style="--card-color: #B5B0FF;">
+							<img src="./img/svg/tech_mobile.svg">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="expertise_swiper-content" style="--card-color: #FA6F17;">
+							<img src="./img/svg/market_mobile.svg">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="expertise_swiper-content" style="--card-color: #95D4F8;">
+							<img src="./img/svg/hr_mobile.svg">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="expertise_swiper-content" style="--card-color: #CCF19D;">
+							<img src="./img/svg/manage_mobile.svg">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="expertise_swiper-content" style="--card-color: #E3B7F5;">
+							<img src="./img/svg/creative_mobile.svg">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="expertise_swiper-content" style="--card-color: #F4D06F;">
+							<img src="./img/svg/fin_mobile.svg">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
 	</section>
 
 <!-- FORMAT -->
 
 	<section class="format wrapper" id="format">
+
+		<div class="format_mobile">
+			<div class="section_title-wrapper container ">
+				<h2 class="section_title">процес</h2>
+			</div>
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="--card-color: #B5B0FF;">
+						<div class="format_swiper-content">
+							<p class="format_left-item-number">01</p>
+							<p class="format_left-item-text">сплачуєш послугу </p>
+						</div>
+					</div>
+					<div class="swiper-slide" style="--card-color: #E9A7E5;">
+						<div class="format_swiper-content">
+							<p class="format_left-item-number">02</p>
+							<p class="format_left-item-text">заповнюєш форму з кар'єрним запитом </p>
+						</div>
+					</div>
+					<div class="swiper-slide" style="--card-color: #6D61FF;">
+						<div class="format_swiper-content" >
+							<p class="format_left-item-number">03</p>
+							<p class="format_left-item-text">Консультант напише у Telegram</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
 		<div class="section_title-wrapper container">
 			<h2 class="section_title">формат</h2>
 		</div>
@@ -224,14 +298,17 @@
 					<p class="format_left-item-number">02</p>
 				</div>
 				<div class="format_left-item" style="--hover-color: #6D61FF;">
-					<p class="format_left-item-text">Консультант(ка) напише у Telegram</p>
+					<p class="format_left-item-text">Консультант напише у Telegram</p>
 					<p class="format_left-item-number">03</p>
 				</div>
 			</div>
+
 			<div class="format_right">
 				<img class="format_img" src="./img/right.png">
 			</div>
 		</div>
+
+
 	</section>
 
 <!-- FOR WHOM	 -->
@@ -251,6 +328,11 @@
 				</svg>
 				
 		</div>
+
+		<div class="forwhom_img-mobile">
+			<img src="./img/svg/forwhom_mobile.svg">
+		</div>
+
 		</div>
 	</section>
 
@@ -298,17 +380,14 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
-			slidesPerView: 2.2,
-			spaceBetween: 30,
-      scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-      },
-			navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+			slidesPerView: 2.1,
     });
   </script>
+	<script>
+    var swiper2 = new Swiper(".mySwiper2", {
+			slidesPerView: 1.1,
+    });
+  </script>
+
   </body>
 </html>
