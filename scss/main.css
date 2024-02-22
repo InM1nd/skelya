@@ -126,7 +126,6 @@ font-family: 'Unbounded', sans-serif; */
 	font-family: Unbounded;
 	font-weight: 900;
 	font-size: clamp(2.25rem, 1.5825rem + 2.8479vw, 5rem);
-	line-height: 120%;
 	text-transform: uppercase;
 	color: #000;
 }
@@ -486,10 +485,9 @@ header {
 .modal_title{
 	font-family: Unbounded;
 	font-weight: 700;
-	font-size: 60px;
+	font-size: clamp(2rem, 1.6394rem + 1.7588vw, 3.75rem);
 	line-height: 100%;
 	text-transform: uppercase;
-	text-align: center;
 	color: #fff;
 }
 
@@ -514,8 +512,9 @@ header {
 }
 
 .modal_content-describ{
+	font-family: Unbounded;
 	font-weight: 500;
-	font-size: 24px;
+	font-size: clamp(1.125rem, 1.0477rem + 0.3769vw, 1.5rem);
 	line-height: 120%;
 	color: #fff;
 }
@@ -524,7 +523,7 @@ header {
 	padding-top: 40px;
 	font-family: Unbounded;
 	font-weight: 400;
-	font-size: 32px;
+	font-size: clamp(1.5rem, 1.397rem + 0.5025vw, 2rem);
 	line-height: 130%;
 	text-transform: uppercase;
 	color: #fff;
@@ -542,8 +541,9 @@ header {
 }
 
 .modal_content-item{
+	font-family: Unbounded;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: clamp(1.125rem, 1.0477rem + 0.3769vw, 1.5rem);
 	line-height: 120%;
 	color: #fff;
 	padding-left: 32px;
@@ -562,7 +562,8 @@ header {
 }
 
 .modal_content-img{
-
+	width: 100%;
+	height: 100%;
 }
 
 .modal_button{
@@ -572,7 +573,7 @@ header {
 	
 	font-family: Unbounded;
 	font-weight: 500;
-	font-size: 28px;
+	font-size: clamp(1.375rem, 1.2977rem + 0.3769vw, 1.75rem);	
 	line-height: 100%;
 	text-transform: uppercase;
 	text-align: center;
@@ -591,7 +592,14 @@ header {
 }
 
 @media (max-width: 500px) {
-	
+	.modal_content{
+		flex-direction: column-reverse;
+		justify-content: space-evenly;
+	}
+
+	.modal_content-right{
+		padding: 0;
+	}
 }
 
 
