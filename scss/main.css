@@ -259,6 +259,7 @@ header {
 	}
 	.hero_container{
 		padding: 0;
+		padding-left: 20px;
 	}
 
 	.hero_skelya-pic{
