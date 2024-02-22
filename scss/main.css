@@ -255,7 +255,7 @@ header {
 
 @media (max-width: 500px) {
 	.hero{
-		height: 100dvh;
+		/* height: 100dvh; */
 	}
 	.hero_container{
 		padding: 0;
