@@ -34,7 +34,7 @@ font-family: 'Unbounded', sans-serif; */
 	scroll-snap-type: y mandatory;
 	scroll-snap-stop: always;
 	scroll-behavior: smooth;
-	overflow-y: auto;
+	position: sticky;
 	/* scrollbar-width: none;
 	&::webkit-scrollbar {
 		display: none;
@@ -473,6 +473,8 @@ header {
 }
 
 
+
+
 .modal_container{
 	height: 100%;
 }
@@ -596,6 +598,10 @@ header {
 	.modal{
 		padding-top: 20px;
 		padding-bottom: 20px;
+	}
+
+	.modal_container{
+		height: auto;
 	}
 
 	.modal_content{
