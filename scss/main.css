@@ -128,6 +128,7 @@ font-family: 'Unbounded', sans-serif; */
 	font-size: clamp(2.25rem, 1.5825rem + 2.8479vw, 5rem);
 	text-transform: uppercase;
 	color: #000;
+	padding: 10px 0;
 }
 
 @media (max-width: 1300px) {
@@ -426,7 +427,23 @@ header {
 }
 
 @media (max-width: 500px) {
+
+	.services_card{
+		background-color: var(--hover-color);
+		color: #000;
+	}
+
+	.services_fill-transparent{
+		stroke-width: 10;
+	}
+
+	.services_card-button{
+		border: 2px #000 solid;
+		color: #000;
+	}
+
 	.button_1{
+		
 		width: 60%;
 		padding: 15px 35px;
 		border-right: 0;
@@ -564,9 +581,17 @@ header {
   align-items: center;
 }
 
+
+
 .modal_content-img{
 	width: 100%;
 	height: 100%;
+
+	fill: var(--hover-color);
+}
+
+.modal_fill{
+	stroke:  var(--hover-color);
 }
 
 .modal_button{
@@ -596,8 +621,7 @@ header {
 
 @media (max-width: 500px) {
 	.modal{
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding: 40px 0;
 	}
 
 	.modal_container{
@@ -615,7 +639,7 @@ header {
 	}
 
 	.modal_button{
-		margin-top: 90px;
+		margin-top: 50px;
 	}
 
 }
