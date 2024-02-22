@@ -423,15 +423,15 @@ header {
 
 	.services_card{
 		padding: 20px 20px;
-	}
-}
-
-@media (max-width: 500px) {
-
-	.services_card{
 		background-color: var(--hover-color);
 		color: #000;
 	}
+
+	.services_card:hover .services_card-img {
+		fill: #040000;
+		transition: stroke 0.2s ease-out;
+	}
+
 
 	.services_fill-transparent{
 		stroke-width: 10;
@@ -453,6 +453,11 @@ header {
 		width: 40%;
 		padding: 15px 25px;
 	}
+}
+
+@media (max-width: 500px) {
+
+	
 }
 
 @media (max-width: 400px) {
@@ -616,22 +621,25 @@ header {
 }
 
 @media (max-width: 900px) {
-	
-}
-
-@media (max-width: 500px) {
-	.modal{
-		padding: 40px 0;
-	}
-
-	.modal_container{
-		height: auto;
-	}
-
 	.modal_content{
 		flex-direction: column-reverse;
 		justify-content: space-evenly;
 	}
+
+	.modal{
+		padding: 40px 0;
+	}
+
+	.modal-close{
+		width: 40px;
+	}
+
+	
+	.modal_container{
+		height: auto;
+	}
+
+	
 
 	.modal_content-right{
 		padding: 0;
@@ -642,6 +650,10 @@ header {
 		margin-top: 50px;
 	}
 
+}
+
+@media (max-width: 500px) {
+	
 }
 
 
@@ -737,7 +749,7 @@ header {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 	.expertise_container {
 		display: none;
 	}
@@ -745,15 +757,12 @@ header {
 	.expertise_swiper-content{
 		background-color: var(--card-color);
 		padding: 50px 35px;
-
-		
 	}
 }
 
-@media (min-width: 501px) {
+@media (min-width: 801px) {
 	.expertise_mobile{
 		display: none;
-		
 	}
 }
 
@@ -858,7 +867,7 @@ header {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 	.format_left{
 		display: none;
 		
@@ -890,7 +899,7 @@ header {
 	}
 }
 
-@media (min-width: 501px) {
+@media (min-width: 801px) {
 	.format_mobile{
 		display: none;
 		
@@ -974,13 +983,13 @@ header {
 /* FOOTER */
 
 .footer{
-	background-color: #CCC9FF;
+	background-color: #000;
 
 	font-family: Unbounded;
-	font-weight: 300;
+	font-weight: 600;
 	font-size: clamp(1.125rem, 1.0992rem + 0.1256vw, 1.25rem);
 	text-transform: uppercase;
-	color: #000;
+	color: #fff;
 
 }
 
