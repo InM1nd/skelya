@@ -204,39 +204,33 @@ header {
 }
 
 #menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  right: 0;
-  bottom: 0;
-  background-color: #000; 
-  z-index: 100;
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 100dvh;	
-  -webkit-transition: opacity 250ms linear, visibility 250ms linear;
-  transition: opacity 250ms linear, visibility 250ms linear;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000;
+	z-index: 100;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 0;
+	width: 100%;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 #menu.active {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transform: translateX(0); 
-  overflow-y: auto;
-  position: fixed;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-  left: 0; /* Добавил это, чтобы отображать меню */
-  top: 0; /* По желанию можно добавить */
-  bottom: 0; /* По желанию можно добавить */
-  padding: 20px;
+	height: 100%;
+	opacity: 1;
+	pointer-events: all;
 }
+
+
 
 
 .menu_burger-nav{
