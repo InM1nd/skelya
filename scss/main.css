@@ -673,8 +673,7 @@ header {
 }
 
 .modal_content-item::marker{
-	
-	content: url(../img/svg/Ellipse.svg);
+	content: url(/img/svg/Ellipse.svg);
 }
 
 
