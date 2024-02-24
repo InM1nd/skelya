@@ -187,7 +187,7 @@ header {
 	font-style: normal;
 	font-weight: 400; /* 40px */
 	text-transform: uppercase;
-	transition: all 0.3s ease-in-out;
+	
 }
 
 .menu_link{
@@ -204,30 +204,40 @@ header {
 }
 
 #menu {
-  display: none; /* Меню по умолчанию скрыто */
+  display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   right: 0;
   bottom: 0;
-  background-color: #000; /* Задний фон меню */
+  background-color: #000; 
   z-index: 100;
-	overflow-y: auto;
+  overflow-y: auto;
   overflow-x: hidden;
-	height: 100dvh;
-	
+  height: 100dvh;	
+  -webkit-transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
-/* Показываем меню при клике */
 #menu.active {
   display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	
-	position: fixed;
-
-	padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(0); 
+  overflow-y: auto;
+  position: fixed;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  left: 0; /* Добавил это, чтобы отображать меню */
+  top: 0; /* По желанию можно добавить */
+  bottom: 0; /* По желанию можно добавить */
+  padding: 20px;
 }
+
 
 .menu_burger-nav{
 	font-family: Unbounded;
