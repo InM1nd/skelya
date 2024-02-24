@@ -2,7 +2,7 @@ var modalBtns = [...document.querySelectorAll(".modal-toggle")];
 modalBtns.forEach(function(btn){
   btn.onclick = function() {
     var modal = btn.getAttribute('data-modal');
-    document.getElementById(modal).style.display = "block";
+    document.getElementById(modal).classList.add('active');
     document.body.style.overflow = 'hidden';
   }
 });
@@ -11,7 +11,7 @@ var closeBtns = [...document.querySelectorAll(".modal-close")];
 closeBtns.forEach(function(btn){
   btn.onclick = function() {
     var modal = btn.closest('.modal');
-    modal.style.display = "none";
+    modal.classList.remove('active');
     document.body.style.overflow = '';
   }
 });
