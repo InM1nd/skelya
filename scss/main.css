@@ -136,7 +136,7 @@ font-family: 'Unbounded', sans-serif; */
 	padding: 10px 0;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
 	.container{
 		padding: 0 20px;
 	}
@@ -489,7 +489,7 @@ header {
 }
 
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
 	.services_container{
 	}
 
@@ -944,7 +944,7 @@ header {
 	width: 100%;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
 	.format_container{
 	
 	}
@@ -1059,9 +1059,7 @@ header {
 }
 
 @media (max-width: 1400px) {
-	.forwhom_contaier {
-		padding: 20px;
-	}
+	
 }
 
 @media (max-width: 900px) {
