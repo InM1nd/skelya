@@ -187,7 +187,7 @@ header {
 	font-style: normal;
 	font-weight: 400; /* 40px */
 	text-transform: uppercase;
-	
+	transition: all 0.2s ease-in-out;
 }
 
 .menu_link{
@@ -230,7 +230,11 @@ header {
 	pointer-events: all;
 }
 
-
+.menu_burger{
+	z-index: 20;
+	width: fit-content;
+	
+}
 
 
 .menu_burger-nav{
@@ -268,7 +272,7 @@ header {
 }
 
 @media (max-width: 820px) {
-	.menu{
+	.menu_default{
 		display: none;
 	}
 
@@ -445,12 +449,12 @@ header {
 
 .services_card:hover .services_card-img {
 	fill: #040000;
-	transition: stroke 0.2s ease-out;
+	transition: stroke 0.3s ease-out;
 }
 
 .services_card:hover .services_fill-transparent {
 	stroke: #040000;
-	transition: stroke 0.2s ease-out;
+	transition: stroke 0.3s ease-out;
 }
 
 
@@ -470,7 +474,7 @@ header {
 	text-transform: uppercase;
 	text-align: center;
 	color: #fff;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .services_card-button:hover{
@@ -717,7 +721,24 @@ header {
 .modal_button:hover{
 	background: #000;
 	color: #fff;
+}
 
+.modal_close{
+	
+}
+
+.modal_close-img{
+	
+}
+
+
+.modal_close-img {
+	fill: #000;
+  transition: fill 0.2s ease-in-out;
+}
+
+.modal_close-img:hover {
+  fill: #fff;
 }
 
 @media (max-width: 1400px) {
@@ -740,8 +761,13 @@ header {
 		padding: 40px 0;
 	}
 
-	.modal-close{
+	.modal_close{
 		width: 40px;
+	}
+
+	.modal_close-img{
+		width: 40px;
+		height: 40px;
 	}
 
 	
@@ -800,55 +826,30 @@ header {
 
 }
 
-/* Стиль по умолчанию для первого элемента (белого) */
+
 .fill-white {
-  fill: white; /* белый цвет по умолчанию */
-  /* animation: fillAnimationWhite 1s infinite alternate; */
+  fill: white; 
+	transition: all 0.3s ease-in-out;
 }
 
-/* Стиль по умолчанию для второго элемента (прозрачного) */
-.fill-transparent {
-  fill: transparent; /* прозрачный цвет по умолчанию */
 
+.fill-transparent {
+  fill: transparent; 
 }
 
 .expertise_img .fill {
   fill: transparent;
-
-	 /* прозрачный цвет по умолчанию */
 }
 
-/* CSS-анимация для прозрачного элемента */
-@keyframes fillAnimationTransparent {
-  from {
-    fill: transparent;
-		stroke: white;
-  }
-  to {
-    fill: var(--hover-color);
-		stroke: var(--hover-color);
-  }
-}
-
-/* CSS-анимация для белого элемента */
-@keyframes fillAnimationWhite {
-  from {
-    fill: white;
-  }
-  to {
-    fill: var(--hover-color);
-  }
-}
 
 .expertise_img:hover .fill-transparent {
-  animation: fillAnimationTransparent 0.7s ;
-	animation-fill-mode: both ;
+  fill: var(--hover-color);
 	stroke: var(--hover-color);
 }
 
 .expertise_img:hover .fill-white {
-  animation: fillAnimationWhite 0.7s ;
-	animation-fill-mode: both;
+  fill: var(--hover-color);
+	stroke: var(--hover-color);
 }
 
 
@@ -1046,23 +1047,17 @@ header {
 .forwhom_img {
 	height: 100%;
 	width: 100%;
+	
 }
 
-@keyframes fillAnimationTransparent {
-  from {
-    fill: transparent;
-		stroke: white;
-  }
-  to {
-    fill: var(--hover-color);
-		stroke: var(--hover-color); /* ваш пользовательский цвет (определенный в var(--hover-color)) */
-  }
+.fill-transparent{
+	fill: #000;
+	transition: all 0.3s ease-in-out;
 }
 
 .forwhom_img:hover .fill-transparent {
-  animation: fillAnimationTransparent 0.7s ;
-	animation-fill-mode: both ;
 	stroke: var(--hover-color);
+	fill: var(--hover-color);
 }
 
 @media (max-width: 1400px) {
@@ -1124,7 +1119,7 @@ header {
 }
 
 .footer_content{
-	padding-left: 15%;
+	padding-left: 13%;
 }
 
 
@@ -1157,10 +1152,6 @@ header {
 		flex-direction: column;
 		
 	}
-}
-
-@media (max-width: 900px) {
-	
 
 	.footer_content{
 		padding: 0;
@@ -1174,6 +1165,12 @@ header {
 		justify-content: flex-start;
 		margin-bottom: 40px;
 	}
+}
+
+@media (max-width: 900px) {
+	
+
+	
 }
 
 @media (max-width: 500px) {

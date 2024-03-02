@@ -7,7 +7,7 @@ modalBtns.forEach(function(btn){
   }
 });
 
-var closeBtns = [...document.querySelectorAll(".modal-close")];
+var closeBtns = [...document.querySelectorAll(".modal_close")];
 closeBtns.forEach(function(btn){
   btn.onclick = function() {
     var modal = btn.closest('.modal');
