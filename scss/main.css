@@ -347,7 +347,7 @@ header {
 
 @media (max-width: 701px) {
 	.hero{
-		height: 100lvh;
+		height: 100%;
 		transition: height 0.2s;
 	}
 	.hero_container{
@@ -579,7 +579,7 @@ header {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	background-color: #000;
 	pointer-events: none;
