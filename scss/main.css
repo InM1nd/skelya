@@ -63,8 +63,10 @@ font-family: 'Unbounded', sans-serif; */
  ul {
 	margin: 0;
 	padding: 0;
-	list-style: none;
+	/* list-style: none; */
  }
+
+
  
  body {
 	font-family: 'Raleway', sans-serif;
@@ -345,7 +347,7 @@ header {
 
 @media (max-width: 701px) {
 	.hero{
-		height: 100dvh;
+		height: 100lvh;
 		transition: height 0.2s;
 	}
 	.hero_container{
@@ -577,7 +579,7 @@ header {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	background-color: #000;
 	pointer-events: none;
@@ -624,7 +626,7 @@ header {
 
 .modal_content{
 	display: flex;
-	padding-top: 30px;
+	padding-top: 20px;
 	height: 100%;
 	width: 100%;
 }
@@ -658,12 +660,14 @@ header {
 .modal_content-list{
 	padding-top: 20px;
 	display: flex;
-   flex-direction: column;
+  flex-direction: column;
 	gap: 10px;
 }
 
 .modal_content-list{
-	padding-left: 20px;
+	margin-left: 30px;
+	list-style-image: url(/img/Ellipse.png);
+	
 }
 
 .modal_content-item{
@@ -672,12 +676,10 @@ header {
 	font-size: clamp(1.125rem, 1.0477rem + 0.3769vw, 1.5rem);
 	line-height: 120%;
 	color: #fff;
-	padding-left: 32px;
+	padding-left: 15px;
 }
 
-.modal_content-item::marker{
-	content: url(/img/svg/Ellipse.svg);
-}
+
 
 
 .modal_content-left{
@@ -758,7 +760,7 @@ header {
 	}
 
 	.modal{
-		padding: 40px 0;
+		padding: 20px 0;
 	}
 
 	.modal_close{
@@ -782,7 +784,7 @@ header {
 	.modal_content-right{
 		width: 100%;
 		padding: 0;
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 
 	.modal_content-left{
@@ -791,13 +793,15 @@ header {
 	}
 
 	.modal_button{
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 
 }
 
 @media (max-width: 500px) {
-	
+	.modal_content-subtitle{
+		display: none;
+	}
 }
 
 
@@ -1011,11 +1015,15 @@ header {
 
 	.format_left-item-text {
 		font-weight: 700;
-		font-size: clamp(0.75rem, 0.0349rem + 3.4884vw, 1.125rem);
+		font-size: 16px;
 		line-height: 100%;
 		text-transform: uppercase;
 		color: #000;
 		text-align: start;
+	}
+
+	.format_img{
+		display: none;
 	}
 }
 
@@ -1024,9 +1032,20 @@ header {
 		display: none;
 		
 	}
+
+	.format_img-mobile{
+		display: none;
+	}
+	
 }
 
+@media(max-width: 400px){
+	.format_left-item-text {
 
+		font-size: 14px;
+		
+	}
+}
 
 
 
