@@ -63,7 +63,7 @@ font-family: 'Unbounded', sans-serif; */
  ul {
 	margin: 0;
 	padding: 0;
-	/* list-style: none; */
+	list-style: none;
  }
 
 
@@ -345,7 +345,7 @@ header {
 	}
 }
 
-@media (max-width: 701px) {
+@media (max-width: 630px) {
 	.hero{
 		height: 100vh;
 		transition: height 0.2s;
@@ -366,7 +366,7 @@ header {
 	}
 }
 
-@media (min-width: 700px) {
+@media (min-width: 630px) {
 	.hero_mobile-pic{
 		display: none;
 	}
