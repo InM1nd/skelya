@@ -276,12 +276,17 @@ header {
 	background-color: #6D61FF;
 }
 
-.menu_burger-close{
-	display: flex;
+.menu_burger-close-wrapper{
+	display: flex; 
 	justify-content: flex-end;
-	
 
 }
+
+.menu_burger-close{
+
+
+}
+
 
 .menu_burger-logo{
 
@@ -328,7 +333,7 @@ header {
 .hero {
 	margin: 0 auto;
 	position: relative;
-	height: 100vh;
+	height: 100dvh;
  }
  
 .hero_container {
@@ -373,7 +378,6 @@ header {
 
 @media (max-width: 630px) {
 	.hero{
-		height: 100vh;
 		transition: height 0.2s;
 	}
 	.hero_container{
