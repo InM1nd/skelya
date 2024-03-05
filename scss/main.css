@@ -233,15 +233,23 @@ header {
 }
 
 .menu_burger{
-	z-index: 20;
 	width: fit-content;
-	
+	z-index: 20;	
+}
+
+.menu_burger-button{
+	font-family: Unbounded;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: #fff;
 }
 
 
 .menu_burger-nav{
 	font-family: Unbounded;
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 24px;
 	line-height: 120%;
 	text-transform: uppercase;
@@ -251,16 +259,28 @@ header {
 .menu_burger-list{
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
+	gap: 15px;
 }
 
-.menu_burger-item{
+.menu_burger-element{
+	width: fit-content;
+	padding: 5px 10px;
 	
+}
+
+.menu_burger-element:hover{
+	background-color: #6D61FF;
+}
+
+.menu_burger-element:focus{
+	background-color: #6D61FF;
 }
 
 .menu_burger-close{
 	display: flex;
 	justify-content: flex-end;
+	
+
 }
 
 .menu_burger-logo{
@@ -281,6 +301,12 @@ header {
 	.menu_link{
 		justify-content: flex-start;
 		padding: 0;
+	}
+
+	.menu_burger-button{
+
+		font-size: 22px;
+		
 	}
 }
 
@@ -640,7 +666,7 @@ header {
 }
 
 .modal_content-describ{
-	font-family: Unbounded;
+	font-family: "Raleway", sans-serif;
 	font-weight: 500;
 	font-size: clamp(1.125rem, 1.0477rem + 0.3769vw, 1.5rem);
 	line-height: 120%;
@@ -659,24 +685,40 @@ header {
 
 .modal_content-list{
 	padding-top: 20px;
-	display: flex;
+  display: flex;
   flex-direction: column;
-	gap: 10px;
-}
-
-.modal_content-list{
-	margin-left: 30px;
-	list-style-image: url(/img/Ellipse.png);
+  gap: 10px;
+  margin-left: 15px;
+  padding-left: 0; /* Удаляем отступы у списка */
+  list-style-type: none; /* Убираем маркеры списка */
+	
 	
 }
 
+
+
+
 .modal_content-item{
-	font-family: Unbounded;
+	font-family: "Raleway", sans-serif;
 	font-weight: 600;
 	font-size: clamp(1.125rem, 1.0477rem + 0.3769vw, 1.5rem);
 	line-height: 120%;
 	color: #fff;
 	padding-left: 15px;
+	position: relative;
+}
+
+.modal_content-list li::before {
+  content: ""; /* Пустой контент, так как маркер задается через list-style-image */
+  position: absolute;
+  top: 50%; /* Смещение маркера к верху на 50% */
+  left: -15px; /* Отступ маркера слева (можно изменить в зависимости от маркера) */
+  transform: translateY(-50%); /* Центрирование маркера по вертикали */
+  background-image: url(/img/Ellipse.png); /* Изображение маркера */
+  background-size: contain; /* Размер маркера */
+  background-repeat: no-repeat; /* Предотвращаем повторение маркера */
+  width: 15px; /* Ширина маркера */
+  height: 15px; /* Высота маркера */
 }
 
 
@@ -923,6 +965,13 @@ header {
 	transition: all 0.3s ease-in-out;
 }
 
+.format_left-item:first-child {
+
+
+	border-top: 0;
+
+}
+
 
 .format_left-item:hover{
 	background-color: var(--hover-color);
@@ -1116,8 +1165,8 @@ header {
 .footer{
 	background-color: #000;
 
-	font-family: Unbounded;
-	font-weight: 600;
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
 	font-size: clamp(1.125rem, 1.0992rem + 0.1256vw, 1.25rem);
 	text-transform: uppercase;
 	color: #fff;
