@@ -335,8 +335,6 @@ header {
 	position: relative;
 	padding-top: 1px;
 
-	height: calc(100vh + 3px);
-  min-height: 920px;
  }
  
 .hero_container {
@@ -385,17 +383,6 @@ header {
 
 /* */
 
-@supports (-webkit-touch-callout: none) {
-	.hero {
-			height: 98vh;
-	}
-
-	@media (max-width: 600px) {
-			.hero {
-					height: 89vh;
-			}
-	}
-}
 
 /* */
 
