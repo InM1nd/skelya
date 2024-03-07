@@ -333,7 +333,7 @@ header {
 .hero {
 	margin: 0 auto;
 	position: relative;
-	height: calc(100vh + 3px);
+	padding-top: 1px;
  }
  
 .hero_container {
