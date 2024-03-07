@@ -234,6 +234,7 @@ header {
 	height: 100%;
 	opacity: 1;
 	pointer-events: all;
+	overflow-x: hidden;
 }
 
 .menu_burger{
