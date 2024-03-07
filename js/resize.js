@@ -1,8 +1,9 @@
-function setMainScreenHeight() {
-  var addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
-  var mainScreen = document.getElementById('hero');
-  mainScreen.style.height = "calc(100vh - " + addressBarHeight + "px)";
+function setMainContainerHeight() {
+  const mainContainer = document.querySelector('.hero');
+  if (mainContainer) {
+      mainContainer.style.height = `${window.innerHeight}px`;
+  }
 }
 
-window.onload = setMainScreenHeight;
-window.onresize = setMainScreenHeight;
+window.addEventListener('DOMContentLoaded', setMainContainerHeight);
+window.addEventListener('resize', setMainContainerHeight);
