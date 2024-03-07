@@ -23,3 +23,8 @@ window.onclick = function(event) {
     document.body.style.overflow = '';
   }
 }
+
+document.querySelector('.modal').addEventListener('scroll', function(e) {
+  e.preventDefault();
+  return false;
+}, { passive: false });
