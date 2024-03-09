@@ -836,6 +836,7 @@ header {
 
 @media (max-width: 900px) {
 	.modal_content{
+		padding: 0;
 		flex-direction: column-reverse;
 		justify-content: space-evenly;
 	}
