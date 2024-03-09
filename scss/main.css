@@ -191,7 +191,7 @@ header {
 	font-family: Unbounded;
 	font-size: clamp(1.25rem, 0.7258rem + 0.6452vw, 1.5rem);
 	font-style: normal;
-	font-weight: 400; /* 40px */
+	font-weight: 400; 
 	text-transform: uppercase;
 	transition: all 0.2s ease-in-out;
 }
@@ -934,7 +934,7 @@ header {
 
 .expertise_img:hover .fill-white {
   fill: var(--hover-color);
-	stroke: var(--hover-color);
+
 }
 
 
