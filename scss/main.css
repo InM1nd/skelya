@@ -1013,6 +1013,7 @@ header {
 
 
 .format_left-item:hover{
+	color: #000;
 	background-color: var(--hover-color);
 }
 
@@ -1022,7 +1023,6 @@ header {
 	font-size: clamp(1rem, 0.794rem + 1.005vw, 2rem);
 	line-height: 100%;
 	text-transform: uppercase;
-	color: #fff;
 }
 
 .format_left-item-number {
@@ -1030,8 +1030,7 @@ header {
 	font-weight: 600;
 	font-size: clamp(2.5rem, 2.1919rem + 0.9859vw, 3.375rem);
 	line-height: 100%;
-	text-align: right;
-	color: #fff;
+	text-align: right;	
 }
 
 .format_right {
