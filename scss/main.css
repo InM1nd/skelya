@@ -451,7 +451,7 @@ header {
 	background-color: var(--hover-color);
 	padding: 50px 30px;
 
-	justify-content: space-between;
+	gap: 50px;
 }
 
 .services_card-right{
@@ -466,7 +466,7 @@ header {
 	font-weight: 500;
 	font-size: clamp(1.25rem, 0.9859rem + 0.8451vw, 2rem);
 	line-height: 130%;
-	
+	margin-top: 30px;
 }
 
 .services_card-list-title{
@@ -475,13 +475,15 @@ header {
 	font-size: 24px;
 	text-transform: uppercase;
 
-	
 }
 
 .services_card-list{
 	font-family: Raleway;
 	font-weight: 500;
 	font-size: 24px;
+	list-style: disc;
+	margin-left: 30px;
+	margin-top: 15px;
 }
 
 .services_card-duration{
@@ -511,8 +513,7 @@ header {
 	height: 100%;
 	fill: var(--hover-color);
 	
-	
-	max-height: 550px;
+	max-height: 500px;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -522,11 +523,8 @@ header {
 	
 }
 
-
-
 .services_card-bottom {
 	display: flex;
-
 }
 
 .services_card-button {
@@ -538,8 +536,9 @@ header {
 	line-height: 130%;
 	text-transform: uppercase;
 	text-align: center;
+	border: 5px #000 solid;
 	color: #000;
-	background-color: #fff;
+	background-color: var(--hover-color);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -980,8 +979,6 @@ header {
 	padding: 0;
 
 }
-.container {
-}
 
 .reviews_wrapper {
 	display: grid;
@@ -994,11 +991,12 @@ header {
 	width: 100%;
 	grid-column: span 1;
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
-	height: 480px;
-	padding: 40px;
-
+	/* gap: 20px; */
+	flex-direction: column;
+	padding: 20px 40px; 
+	height: 580px;
+	
 	position: relative;
 }
 
@@ -1009,14 +1007,16 @@ header {
 	line-height: 120%;
 	text-transform: uppercase;
 	color: #000;
-	width: 60%;
 }
 
 .reviews_card-text {
 	font-family: Raleway;
 	font-weight: 500;
 	font-size: 24px;
-	width: 60%;
+	width: 55%;
+	display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .reviews_card-name {
@@ -1032,7 +1032,6 @@ header {
 	font-family: Raleway;
 	font-weight: 500;
 	font-size: 24px;
-	width: 60%;
 }
 
 .reviews_img{
@@ -1041,6 +1040,7 @@ header {
 	right: 0;
 	display: flex;
 	justify-content: right;
+	height: 70%;
 }
 
 
@@ -1048,7 +1048,122 @@ header {
 /* FAQ */
 
 .faq{
+	
+}
 
+.accordion_container{
+	width: 100%;
+	display: flex;	
+	padding: 0;
+}
+
+.grid {
+  display: flex;
+	flex-direction: column;
+  width: 100%;
+  /* gap: 20px; */
+}
+
+.faq-container {
+ 
+}
+
+
+
+.faq-item{
+	display: flex;
+	
+	flex-direction: column;
+	border: 2px #fff solid;
+
+	font-family: Unbounded;
+}
+
+.ri-add-line{
+	color: #fff;
+	display: flex;
+  align-items: flex-end;
+	height: 48px;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+	justify-content: space-between;
+	font-size: 40px;
+  column-gap: 10px;
+
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  cursor: pointer;
+
+	padding: 40px;
+}
+
+.faq-header-title {
+  font-weight: 500;
+}
+
+.faq-desp-wrapper{
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.faq-desp-content {
+  /* padding: 0 1rem 2rem 1rem; */
+	
+}
+
+.faq-header:hover {
+  /* box-shadow: 0 2px 8px lightgray; */
+}
+
+.ri-add-line {
+  font-weight: bold;
+}
+
+.faq-desp {
+  overflow: hidden;
+  height: 0px;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.faq-open .faq-header,
+.faq-open .faq-desp {
+  /* background-color: #0053d6; */
+  color: white;
+}
+
+.faq-open .ri-add-line {
+  transform: rotate(45deg);
+}
+
+.faq-desp-list{
+	margin: 40px;
+	list-style-type: disc;
+}
+
+.faq-desp-item{
+
+}
+
+.faq-item,
+.faq-header,
+.ri-add-line,
+.faq-header-title,
+.faq-desp,
+.faq-desp-content {
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 

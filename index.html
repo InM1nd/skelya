@@ -20,6 +20,10 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
 	<script src="https://cdn.jsdelivr.net/npm/accordion@3.0.2/src/accordion.min.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/accordion@3.0.2/src/accordion.min.css" rel="stylesheet">
+	<link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 	<link rel="stylesheet" href="./scss/main.css">
 
   </head>
@@ -61,8 +65,8 @@
 					</ul>	
 				</nav>
 				<ul>
-					<li><a>instagram</a></li>
-					<li><a>telegram</a></li>
+					<li class="faq-desp-item"><a>instagram</a></li>
+					<li class="faq-desp-item"><a>telegram</a></li>
 				</ul>
 					<img class="menu_burger-logo" src="./img/skelya_logo_1440p.png" alt="Описание картинки">
 			</div>
@@ -230,14 +234,16 @@
 		<div class="services_card" style="--hover-color: #3FAD78;">
 
 			<div class="services_card-left">
-				<h3 class="services_card-name">розбір кейсу</h3>
-				<p class="services_card-subtitle">Проконсультуємо та розробимо план дій під ціль</p>
+				<div>
+					<h3 class="services_card-name">розбір кейсу</h3>
+					<p class="services_card-subtitle">Проконсультуємо та розробимо план дій під ціль</p>
+				</div>
 				<div>
 				<h5 class="services_card-list-title" >Що включає:</h5>
 				<ul class="services_card-list">
 					<li class="services_card-list-item">Аналіз резюме</li>
-					<li class="services_card-list-item">1 година дзвінок з кар’єрним експертом та її запис </li>
-					<li class="services_card-list-item">Текстова підртримка 5 робочих днів </li>
+					<li class="services_card-list-item">Інтро дзвінок з експертом, та його запис</li>
+					<li class="services_card-list-item">Текстова підтримка на 5 робочих днів </li>
 				</ul>
 				</div>
 				<h5 class="services_card-duration"><b>Як довго:</b> 5 днів</h5>
@@ -258,14 +264,18 @@
 		<div class="services_card" style="--hover-color: #E3B7F5;">
 
 			<div class="services_card-left">
-				<h3 class="services_card-name">супровід </h3>
-				<p class="services_card-subtitle">Проконсультуємо та розробимо план дій під ціль</p>
+				<div>
+					<h3 class="services_card-name">супровід </h3>
+					<p class="services_card-subtitle">Розробимо план дій під ціль та надамо </br>комплексну підтримку у її досягненні.</p>
+				</div>
+				
 				<div>
 				<h5 class="services_card-list-title" >Що включає:</h5>
 				<ul class="services_card-list">
 					<li class="services_card-list-item">Аналіз резюме</li>
-					<li class="services_card-list-item">1 година дзвінок з кар’єрним експертом та її запис </li>
-					<li class="services_card-list-item">Текстова підртримка 5 робочих днів </li>
+					<li class="services_card-list-item">Щотижневі дзвінки з експертом, та їх записи</li>
+					<li class="services_card-list-item">Проміжні домашні завдання </li>
+					<li class="services_card-list-item">Текстова підтримка на весь період послуги</li>
 				</ul>
 				</div>
 				<h5 class="services_card-duration"><b>Як довго:</b> 30 днів</h5>
@@ -289,44 +299,59 @@
 
 <!-- REVIEWS -->
 
-<section class="reviews wrapper" id="faq">
+<section class="reviews wrapper" id="">
 	<div class="section_title-wrapper container">
 		<h2 class="section_title">Наші кейси</h2>
 	</div>
 
 	<div class="reviews_container container">
 		<div class="reviews_wrapper">
-			<div class="reviews_card" style="--hover-color: #95D4F8;">
-				<p class="reviews_card-title">отримав підвищення до ліда</p>
-				<p class="reviews_card-text">Вже довго працював на позиції мідла, але хотілося рости далі </p>
-				<div>
-					<p class="reviews_card-name">Слава</p>
-					<p class="reviews_card-position">Айти финансист</p>
-				</div>
-				<div class="reviews_img">
-					<img src="./img/Slava.png">
-				</div>
-			</div>
 			<div class="reviews_card" style="--hover-color: #3FAD78;">
-				<p class="reviews_card-title">отримав підвищення до ліда</p>
-				<p class="reviews_card-text">Вже довго працював на позиції мідла, але хотілося рости далі </p>
+				<h3 class="reviews_card-title">Перейшла на </br> фулл-тайм</h3>
+				<div class="reviews_card-text">
+					<p>
+						Марі кілька років працювала на фрілансі, часто беручи багато проектів одразу, що призводило до вигорання.
+					</p>
+					<p>Вирішила перейти на  фулл-тайм, але не розуміла, як це зробити.</p>
+				</div>
 				<div>
-					<p class="reviews_card-name">Слава</p>
-					<p class="reviews_card-position">Айти финансист</p>
+					<p class="reviews_card-name">Марі</p>
+					<p class="reviews_card-position">Head of SMM</p>
 				</div>
 				<div class="reviews_img">
-					<img src="./img/Slava.png">
+					<img src="./img/Mari.png">
 				</div>
 			</div>
 			<div class="reviews_card" style="--hover-color: #6D61FF;">
-				<p class="reviews_card-title">отримав підвищення до ліда</p>
-				<p class="reviews_card-text">Вже довго працював на позиції мідла, але хотілося рости далі</p>
+				<h3 class="reviews_card-title">ЗМінив сферу діяльності</h3>
+				<div class="reviews_card-text">
+					<p>Після початку повномасштабного вторгнення Амрах втратив роботу і деякий час працював у НУО. </p>
+					<p>Вирішив перейти в інвестиційну сферу, але не знав, як адаптувати свій поточний досвід для  переходу. </p>
+				</div>
 				<div>
-					<p class="reviews_card-name">Слава</p>
-					<p class="reviews_card-position">Айти финансист</p>
+					<p class="reviews_card-name">Амрах</p>
+					<p class="reviews_card-position">Investment Analyst</p>
 				</div>
 				<div class="reviews_img">
-					<img src="./img/Slava.png">
+					<img src="./img/Amrah.png">
+				</div>
+			</div>
+			<div class="reviews_card" style="--hover-color: #F4D06F;">
+				<h3 class="reviews_card-title">отримав </br>ПЛАН ДІЙ</h3>
+				<div class="reviews_card-text">
+					<p>
+						Сашко працював у театрі директором по світлу, але завжди мріяв про кінематограф.
+					</p>
+					<p>
+						Набравшись сміливості, він вирішив йти за мрією, проте не знав, з чого розпочати. 
+					</p>
+				</div>
+				<div>
+					<p class="reviews_card-name">Сашко</p>
+					<p class="reviews_card-position">Film Director</p>
+				</div>
+				<div class="reviews_img">
+					<img src="./img/Sasha.png">
 				</div>
 			</div>
 		</div>
@@ -336,12 +361,111 @@
 
 <!-- FAQ -->
 
-	<section class="faq wrapper" id="faq">
+	<section  class="faq wrapper" id="faq">
 		<div class="section_title-wrapper container">
 			<h2 class="section_title">інші питання</h2>
 		</div>
+		<div class="accordion_container container">
+			<div class="faq-container grid">
+        <div class="faq-item">
+          <header class="faq-header">
+            <h4 class="faq-header-title">Хто мене консультує?</h4>
+						<i class="ri-add-line"></i>
+          </header>
+          <div class="faq-desp">
+						<div class="faq-desp-wrapper">
+							<p class="faq-desp-content">
+								Працюємо з консультантами, які спеціалізуються на різних сферах і мають не менше трьох років досвіду у кар'єрних питаннях. 
+							</p>
+							<p class="faq-desp-content">
+								Залежно від твоїх потреб, ми підбираємо найкращого спеціаліста для тебе.
+							</p>
+						</div>
+          </div>
+        </div>
 
+        <div class="faq-item">
+          <header class="faq-header">  
+            <h4 class="faq-header-title">
+              Як визначити, який сервіс мені краще підходить?
+            </h4>
+						<i class="ri-add-line"></i>
+          </header>
+          <div class="faq-desp">
+						<div class="faq-desp-wrapper">
+							<p class="faq-desp-content">
+								Для швидкої експертної поради за конкретним питанням обирай <u>РОЗБІР КЕЙСУ</u>. 
+							</p>
+							<p class="faq-desp-content">
+								Якщо ж ти прагнеш досягти довгострокових кар'єрних цілей і потребуєш підтримки на кожному кроці, краще підійде <u>СУПРОВІД</u>.  
+							</p>
+							<p class="faq-desp-content">
+								У разі сумнівів, пиши у підтримку, і ми допоможемо обрати кращий варіант.  
+							</p>
+						</div>
+          </div>
+					
+        </div>
+
+        <div class="faq-item">
+          <header class="faq-header">
+            <h4 class="faq-header-title">З якими запитами допоможете?</h4>
+						<i class="ri-add-line"></i>
+          </header>
+          <div class="faq-desp">
+						<div class="faq-desp-wrapper">
+            <p class="faq-desp-content">
+              Зміна кар'єри та професії:
+            </p>
+						<ul class="faq-desp-list">
+							<li class="faq-desp-item"> Як змінити професію?</li>
+							<li class="faq-desp-item"> Як перейти з фрілансу на постійну роботу?</li>
+							<li class="faq-desp-item"> Як вибрати нову професію?</li>
+							<li class="faq-desp-item"> Як отримати професійну освіту?</li>
+							<li class="faq-desp-item"> Як змінити місце роботи або сферу діяльності?</li>
+						</ul>
+						<p class="faq-desp-content">
+              Пошук роботи та релокація:
+            </p>
+						<ul class="faq-desp-list">
+							<li class="faq-desp-item"> Як знайти роботу за кордоном?</li>
+							<li class="faq-desp-item"> Як знайти роботу після онлайн-курсів?</li>
+							<li class="faq-desp-item"> Як знайти першу роботу без досвіду?</li>
+							<li class="faq-desp-item"> Як повернутися на роботу після тривалої перерви?</li>
+							<li class="faq-desp-item"> Як оцінити свої можливості працевлаштування за кордоном?</li>
+						</ul>
+						<p class="faq-desp-content">
+              Розвиток кар'єри:
+            </p>
+						<ul class="faq-desp-list">
+							<li class="faq-desp-item"> Як отримати підвищення та збільшити зарплату?</li>
+							<li class="faq-desp-item"> Як подолати карʼєрну безвихідь?</li>
+							<li class="faq-desp-item"> Як розробити кар'єрну стратегію?</li>
+						</ul>
+						<p class="faq-desp-content">
+              Особистісне зростання та вигорання:
+            </p>
+						<ul class="faq-desp-list">
+							<li class="faq-desp-item"> Як впоратися з професійним вигоранням?</li>
+							<li class="faq-desp-item"> Як подолати синдром самозванця?</li>
+							<li class="faq-desp-item"> Як оцінити свою вартість на ринку?</li>
+						</ul>
+						<p class="faq-desp-content">
+              Підготовка до пошуку роботи:
+            </p>
+						<ul class="faq-desp-list">
+							<li class="faq-desp-item"> Як скласти ефективне резюме та портфоліо?</li>
+							<li class="faq-desp-item"> Як підготуватися до тестового співбесіди?</li>
+							<li class="faq-desp-item"> Як оформити профіль на LinkedIn?</li>
+							<li class="faq-desp-item"> Як написати готове резюме англійською мовою?юме на англійській мові?</li>
+						</ul>
+          </div>
+					
+        </div>
+		</div>
 	</section>
+
+	
 
 <!-- FOOTER -->
 
@@ -379,6 +503,7 @@
 	<script src="./js/services.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js"></script>
+	<script src="./js/acordion.js"></script>
 
   </body>
 </html>
