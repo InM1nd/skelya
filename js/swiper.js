@@ -4,15 +4,12 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
-  slidesPerView: 1.1,
-  autoplay: {
-    delay: 2000, // Задержка между слайдами в миллисекундах
-    disableOnInteraction: false, // Отключает остановку автопрокрутки при взаимодействии пользователя с свайпером
-  },
-  breakpoints: {
-    801: {
-      slidesPerView: 4.1,
-    },
-  },
+  slidesPerView: 1.05,
+
+  // breakpoints: {
+  //   801: {
+  //     slidesPerView: 1.1,
+  //   },
+  // },
   pauseOnHover: true, // Пауза при наведении
 });
