@@ -129,7 +129,7 @@ font-family: 'Unbounded', sans-serif; */
  }
 
 .section_title-wrapper{
-	background-color: #ffffff;
+	background-color: #D9D9D9;
 	width: 100%;
 }
 
@@ -140,6 +140,10 @@ font-family: 'Unbounded', sans-serif; */
 	text-transform: uppercase;
 	color: #000;
 	padding: 10px 0;
+}
+
+.slider:hover .slide-track {
+  animation-play-state: paused;
 }
 
 @media (max-width: 1300px) {
@@ -543,7 +547,7 @@ header {
 }
 
 .services_card-button:hover{
-	background-color: #6D61FF;
+	background-color: #ffffff;
 }
 
 
@@ -636,49 +640,46 @@ header {
 
 }
 
-.expertise_container {
-	padding-top: 60px;
-	padding-bottom: 60px;
-
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 40px;
-
-	justify-content: center;
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
 }
 
-.expertise_item {
-	position: relative;
-	overflow: hidden;
-  border-radius: 5px;
-
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
-
-.fill-white {
-  fill: white; 
-	transition: all 0.3s ease-in-out;
+.slider::before {
+  left: 0;
+  top: 0;
 }
 
-
-.fill-transparent {
-  fill: transparent; 
+.slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(900px * 20);
 }
 
-.expertise_img .fill {
-  fill: transparent;
+.slide {
+  height: auto;
+  width: 500px;
 }
 
-
-.expertise_img:hover .fill-transparent {
-  fill: var(--hover-color);
-	stroke: var(--hover-color);
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
 
-.expertise_img:hover .fill-white {
-  fill: var(--hover-color);
-
-}
 
 .expertise_swiper-content{
 	background-color: var(--card-color);
@@ -1013,7 +1014,7 @@ header {
 	font-family: Raleway;
 	font-weight: 500;
 	font-size: 24px;
-	width: 55%;
+	width: 56%;
 	display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1061,14 +1062,12 @@ header {
   display: flex;
 	flex-direction: column;
   width: 100%;
-  /* gap: 20px; */
+
 }
 
 .faq-container {
  
 }
-
-
 
 .faq-item{
 	display: flex;
@@ -1078,6 +1077,8 @@ header {
 
 	font-family: Unbounded;
 }
+
+
 
 .ri-add-line{
 	color: #fff;
@@ -1098,6 +1099,10 @@ header {
   cursor: pointer;
 
 	padding: 40px;
+}
+
+.faq-header:hover{
+	background-color: #6D61FF;
 }
 
 .faq-header-title {
