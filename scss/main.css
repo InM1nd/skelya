@@ -458,6 +458,7 @@ header {
 
 .services_card-right{
 	display: flex;
+	justify-content: space-between;
 	flex-direction: column;
 	grid-column: span 2;
 	background-color: #040000;
@@ -508,7 +509,7 @@ header {
 
 .services_card-img-wrapper{
 	padding: 45px 45px;
-	height: -webkit-fill-available;
+	height: fill-available;
 }
 
 .services_card-img {
@@ -598,6 +599,7 @@ header {
 
 	.services_card-subtitle{
 		padding: 0 25px;
+		margin-top: 0;
 	}
 
 	.services_card-name{
@@ -605,7 +607,7 @@ header {
 	}
 
 	.services_card-img-wrapper{
-		display: none;
+		/* display: none; */
 		
 	}
 
@@ -666,7 +668,7 @@ header {
 }
 
 .slide-track {
-  animation: scroll 40s linear infinite;
+  animation: scroll 20s linear infinite;
   display: flex;
   width: calc(900px * 20);
 }
@@ -702,8 +704,6 @@ header {
 
 @media (max-width: 1400px) {
 	.slide-track {
-		animation: scroll 40s linear infinite;
-		display: flex;
 		width: calc(1200px * 20);
 	}
 	
@@ -896,6 +896,13 @@ header {
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 40px;
+	color: #000;	
+	transition: all 0.3s ease-in-out;
+}
+
+.cases_left-item:hover {
+	background-color: #000;
+	color:  var(--hover-color);
 }
 
 .cases_left-item-number {
@@ -904,7 +911,6 @@ header {
 	font-size: 80px;
 	line-height: 100%;
 	text-transform: uppercase;
-	color: #000;	
 }
 
 .cases_left-item-text {
@@ -913,7 +919,6 @@ header {
 	font-size: 32px;
 	line-height: 120%;
 	text-transform: uppercase;
-	color: #000;
 
 	margin-top: 200px;
 }
@@ -951,6 +956,12 @@ header {
 @media (max-width: 800px) {
 	.cases{
 		display: none;
+	}
+
+	.cases_left-item-text {
+		font-size: 18px;
+		text-align: left;
+		margin-top: 100px;
 	}
 }
 
@@ -1043,8 +1054,8 @@ header {
   text-align: left;
 	/* gap: 20px; */
 	flex-direction: column;
-	padding: 20px 40px; 
-	height: 580px;
+	/* padding: 20px 40px;  */
+	/* height: 580px; */
 	
 	position: relative;
 }
@@ -1062,7 +1073,7 @@ header {
 	font-family: Raleway;
 	font-weight: 500;
 	font-size: 24px;
-	width: 56%;
+	width: 55%;
 	display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1084,12 +1095,12 @@ header {
 }
 
 .reviews_img{
-	position: absolute;
+	/* position: absolute; */
 	bottom: 0;
 	right: 0;
 	display: flex;
 	justify-content: right;
-	height: 70%;
+	max-height:100%;
 }
 
 @media (max-width: 1400px) {
@@ -1169,9 +1180,9 @@ header {
 	padding: 40px;
 }
 
-.faq-header:hover{
+/* .faq-header:hover{
 	background-color: #6D61FF;
-}
+} */
 
 .faq-header-title {
   font-weight: 500;
@@ -1195,9 +1206,10 @@ header {
 
 
 .faq-desp {
+	font-family: Raleway;
   overflow: hidden;
   height: 0px;
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: 500;
 }
 
@@ -1291,7 +1303,7 @@ header {
 .footer_list{
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 15px;
 }
 
 .footer_item{
