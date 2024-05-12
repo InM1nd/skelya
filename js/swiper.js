@@ -1,6 +1,7 @@
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2.1,
+  slidesPerView: 1.05,
+
 });
 
 var swiper2 = new Swiper(".mySwiper2", {

@@ -276,11 +276,24 @@ header {
 	
 }
 
+.menu_burger-contact-list{
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 700;
+	/* text-transform: uppercase; */
+	color: #fff;
+	display: flex;
+	margin-bottom: 20px;
+	gap: 20px;
+}
+
 .menu_burger-element:hover{
+	color: #000;
 	background-color: #6D61FF;
 }
 
 .menu_burger-element:focus{
+	color: #000;
 	background-color: #6D61FF;
 }
 
@@ -470,6 +483,7 @@ header {
 	font-size: clamp(1.25rem, 0.9859rem + 0.8451vw, 2rem);
 	line-height: 130%;
 	margin-top: 30px;
+	width: 80%;
 }
 
 .services_card-list-title{
@@ -483,7 +497,7 @@ header {
 .services_card-list{
 	font-family: Raleway;
 	font-weight: 500;
-	font-size: 24px;
+	font-size: clamp(1.25rem, 0.9859rem + 0.8451vw, 2rem);
 	list-style: disc;
 	margin-left: 30px;
 	margin-top: 15px;
@@ -558,10 +572,12 @@ header {
 
 
 @media (max-width: 1300px) {
-	
+	.services_card-subtitle {
+		width: 100%;
+	}
 }
 
-@media (min-width: 901px) {
+@media (max-width: 901px) {
 	.services_card-img-wrapper-mobile{
 		display: none;
 	}
@@ -939,8 +955,8 @@ header {
 @media (max-width: 800px) {
 	.cases_swiper-content{
 		width: 100%;
-		height: 400px;
-		padding: 28px 20px;
+		height: 380px;
+		padding: 50px 35px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -959,9 +975,9 @@ header {
 	}
 
 	.cases_left-item-text {
-		font-size: 18px;
+		font-size: 24px;
 		text-align: left;
-		margin-top: 100px;
+		margin-top: 65px;
 	}
 }
 
@@ -1190,7 +1206,9 @@ header {
 
 .faq-desp-wrapper{
 	padding: 40px;
+	padding-top: 0;
 	display: flex;
+	gap: 20px;
 	flex-direction: column;
 }
 
@@ -1225,6 +1243,7 @@ header {
 
 .faq-desp-list{
 	margin: 40px;
+	margin-top: 0;
 	list-style-type: disc;
 }
 
