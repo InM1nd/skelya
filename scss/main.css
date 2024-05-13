@@ -632,7 +632,7 @@ header {
 	}
 
 	.services_card-button{
-		border: 2px #000 solid;
+		border: none;
 		color: #000;
 	}
 
@@ -1261,7 +1261,11 @@ header {
 }
 
 
-
+@media (min-width: 1400px) {
+	.faq-desp-wrapper{
+		width: 75%;
+	}
+}
 
 @media screen and (max-width: 800px) {
 	.faq-header{
@@ -1303,7 +1307,7 @@ header {
 
 .footer_container{
 	padding-bottom: 40px;
-	height: 100vh;
+	height: 100dvh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
